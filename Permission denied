@@ -1,0 +1,6 @@
+RM-laser仓库下pfa_vision_radar-master/RM_serial_py/example_send.py:
+问题：
+运行时报错，PermissionError: [Errno 13] Permission denied: '/dev/ttyUSB0'
+解决：
+这是权限不够。
+以root用户权限运行你的Python脚本，可以绕过权限问题。终端输入sudo /home/oyh/miniconda3/envs/laser_env/bin/python /home/oyh/pfa_vision_radar-master/RM_serial_py/example_send.py
