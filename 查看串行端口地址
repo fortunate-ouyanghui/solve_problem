@@ -1,0 +1,3 @@
+串口模块连接电脑，如何查看串行端口的地址：
+1 打开终端输入sudo dmesg | grep USB。找到 ch341-uart converter now attached to ttyUSB0，说明串口模块挂载在/dev/ttyUSB0
+2 检查设备是否存在。ls -l /dev/ttyUSB0。
